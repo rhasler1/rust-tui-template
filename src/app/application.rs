@@ -1,4 +1,4 @@
-use ratatui::prelude::{Layout,Direction,Constraint,Alignment,Style,Span,Color};
+use ratatui::prelude::{Frame,Layout,Direction,Constraint,Alignment,Style,Span,Color};
 use ratatui::widgets::Paragraph;
 
 pub struct App {
@@ -13,8 +13,8 @@ impl App {
         }
     }
 
-    pub fn draw(&mut self, frame: &mut ratatui::Frame) -> anyhow::Result<()> {
-        let chunks = ratatui::layout::Layout::default()
+    pub fn draw(&mut self, frame: &mut Frame) -> anyhow::Result<()> {
+        let chunks = Layout::default()
             .direction(Direction::Vertical)
             .constraints([
                 Constraint::Min(1)

@@ -1,6 +1,6 @@
-// MPSC channel where producer sends AppEvent to receiver
-// Crossterm mouse and key events are adapted to corresponding
-// AppEvent variants
+// Bounded MPSC channel where producer sends AppEvent to receiver (located at src/main.rs)
+// The sending thread will block if the bounded MPSC channel is saturated
+// Crossterm mouse and key events are adapted to corresponding AppEvent variants
 use crate::adapters::crossterm::input::*;
 
 pub enum AppEvent {
