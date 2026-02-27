@@ -1,5 +1,5 @@
-use rust_tui_template::app::application::App;
-use rust_tui_template::app::event::{AppEvent, AppEvents};
+use rust_tui_template::app::App;
+use rust_tui_template::events::event::{AppEvent, AppEvents};
 use rust_tui_template::adapters::crossterm::input::*;
 use log::info;
 
