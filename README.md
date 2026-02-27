@@ -8,10 +8,12 @@ src/
 │   │   └── input.rs
 │   └── crossterm.rs
 ├── adapters.rs
-├── app
-│   ├── application.rs
-│   └── event.rs
 ├── app.rs
+├── components
+├── components.rs
+├── events
+│   └── event.rs
+├── events.rs
 ├── lib.rs
 └── main.rs
 ```
